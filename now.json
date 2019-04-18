@@ -6,9 +6,9 @@
     "MOLTIN_CLIENT_ID": "@demo-moltin-client-id",
     "MOLTIN_CLIENT_SECRET": "@demo-moltin-client-secret",
     "MOLTIN_WEBHOOK_SECRET": "@demo-moltin-webhook-secret",
-    "AWS_ACCESS_KEY_ID": "@demo-aws-access-key-id",
-    "AWS_SECRET_ACCESS_KEY": "@demo-aws-secret-access-key",
-    "AWS_REGION": "@demo-aws-region",
+    "AMAZON_ACCESS_KEY_ID": "@demo-aws-access-key-id",
+    "AMAZON_SECRET_ACCESS_KEY": "@demo-aws-secret-access-key",
+    "AMAZON_REGION": "@demo-aws-region",
     "SHIPENGINE_PRIVATE_KEY": "@demo-shipengine-private-key",
     "EMAIL_FROM": "@demo-email-from"
   },
