@@ -1,28 +1,15 @@
 const { json, send } = require('micro')
 const mailcomposer = require('nodemailer/lib/mail-composer')
+const AWS = require('aws-sdk')
+const { createClient: moltinClient } = require('@moltin/request')
 const {
   createClient: shipEngineClient
 } = require('@particular./shipengine-request')
-const { createClient: moltinClient } = require('@moltin/request')
 const {
   createShipment,
   createShipmentLabel,
   startTracking
 } = require('./utils')
-const AWS = require('aws-sdk')
-const SES = new AWS.SES({
-  accessKeyId: process.env.AMAZON_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AMAZON_SECRET_ACCESS_KEY,
-  region: process.env.AMAZON_REGION
-})
-const moltin = new moltinClient({
-  client_id: process.env.MOLTIN_CLIENT_ID,
-  client_secret: process.env.MOLTIN_CLIENT_SECRET,
-  application: 'demo-sync-moltin-to-shipengine'
-})
-const shipEngine = new shipEngineClient({
-  client_secret: process.env.SHIPENGINE_PRIVATE_KEY
-})
 const cors = require('micro-cors')({
   allowMethods: ['POST'],
   exposeHeaders: ['x-moltin-secret-key'],
@@ -36,6 +23,20 @@ const cors = require('micro-cors')({
     'Authorization',
     'Accept'
   ]
+})
+
+const SES = new AWS.SES({
+  accessKeyId: process.env.AMAZON_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AMAZON_SECRET_ACCESS_KEY,
+  region: process.env.AMAZON_REGION
+})
+const moltin = new moltinClient({
+  client_id: process.env.MOLTIN_CLIENT_ID,
+  client_secret: process.env.MOLTIN_CLIENT_SECRET,
+  application: 'demo-sync-moltin-to-shipengine'
+})
+const shipEngine = new shipEngineClient({
+  client_secret: process.env.SHIPENGINE_PRIVATE_KEY
 })
 
 const _toJSON = error => {
