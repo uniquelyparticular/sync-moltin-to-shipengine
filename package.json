@@ -1,5 +1,5 @@
 {
-  "name": "@particular./shipengine",
+  "name": "@particular./sync-moltin-to-shipengine",
   "version": "0.0.0-semantic-release",
   "author": "Adam Grohs <info@uniquelyparticular.com> (https://uniquelyparticular.com)",
   "owner": "Particular.",
@@ -19,8 +19,8 @@
     "particular."
   ],
   "license": "MIT",
-  "homepage": "https://github.com/uniquelyparticular/shipengine#readme",
-  "repository": "github:uniquelyparticular/shipengine",
+  "homepage": "https://github.com/uniquelyparticular/sync-moltin-to-shipengine#readme",
+  "repository": "github:uniquelyparticular/sync-moltin-to-shipengine",
   "main": "src/index.js",
   "scripts": {
     "dev": "micro-dev",
