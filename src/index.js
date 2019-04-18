@@ -11,9 +11,9 @@ const {
 } = require('./utils')
 const AWS = require('aws-sdk')
 const SES = new AWS.SES({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  region: process.env.AWS_REGION
+  accessKeyId: process.env.AMAZON_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AMAZON_SECRET_ACCESS_KEY,
+  region: process.env.AMAZON_REGION
 })
 const moltin = new moltinClient({
   client_id: process.env.MOLTIN_CLIENT_ID,
