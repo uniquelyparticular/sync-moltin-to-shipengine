@@ -148,8 +148,8 @@ module.exports = cors(async (req, res) => {
       ) {
         // console.log(`Shipping, rateId: ${shipping_item.sku}`)
         const [carrierId, serviceCode] = shipping_item.sku.split('--')
-        console.log(`Shipping, carrierId: ${carrierId}`)
-        console.log(`Shipping, serviceCode: ${serviceCode}`)
+        // console.log(`Shipping, carrierId: ${carrierId}`)
+        // console.log(`Shipping, serviceCode: ${serviceCode}`)
 
         return createShipment(
           shipEngine,
@@ -159,22 +159,27 @@ module.exports = cors(async (req, res) => {
           shipping_address
         )
           .then(shipment => {
-            console.log(`Shipping, shipment: ${JSON.stringify(shipment)}`)
+            // console.log(`Shipping, shipment: ${JSON.stringify(shipment)}`)
             // this is where we may likely want a flow on the order object to add the shipment_id
-            return createShipmentLabel(shipEngine, shipment.shipment_id)
+            return createShipmentLabel(
+              shipEngine,
+              shipment.shipment_id,
+              process.env.NODE_ENV !== 'production' ||
+                process.env.TESTING_MODE === 'development'
+            )
               .then(label => {
-                console.log(`Shipping, label: ${JSON.stringify(label)}`)
+                // console.log(`Shipping, label: ${JSON.stringify(label)}`)
                 // this is where we may likely want a flow on the order object to add the carrier_code and tracking_number
                 return startTracking(
                   shipEngine,
                   label.carrier_code,
                   label.tracking_number
                 ).then(() => {
-                  console.log(
-                    `Shipping, label.shipment_id: ${JSON.stringify(
-                      label.shipment_id
-                    )}`
-                  )
+                  // console.log(
+                  //   `Shipping, label.shipment_id: ${JSON.stringify(
+                  //     label.shipment_id
+                  //   )}`
+                  // )
                   // this is where we would want to email the warehouse w/ a shipping label and include a link to the label.shipment_id (and maybe send direct to the pickface printer?)
 
                   if (label.label_id) {
@@ -258,18 +263,18 @@ module.exports = cors(async (req, res) => {
                       ]
                     }
 
-                    console.log(`Shipping, params: ${JSON.stringify(params)}`)
+                    // console.log(`Shipping, params: ${JSON.stringify(params)}`)
                     const message = new mailcomposer(params).compile()
 
                     // return SES.sendEmail(params)
                     //   .promise()
                     return sendComposedEmail(SES, message)
                       .then(emailResponse => {
-                        console.log(
-                          `Shipping, emailResponse: ${JSON.stringify(
-                            emailResponse
-                          )}`
-                        )
+                        // console.log(
+                        //   `Shipping, emailResponse: ${JSON.stringify(
+                        //     emailResponse
+                        //   )}`
+                        // )
                         return send(
                           res,
                           200,
