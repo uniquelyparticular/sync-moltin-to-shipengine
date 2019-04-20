@@ -50,10 +50,10 @@ const createShipment = (
   })
 }
 
-const createShipmentLabel = (shipEngine, shipmentId) => {
+const createShipmentLabel = (shipEngine, shipmentId, testLabel = true) => {
   return new Promise((resolve, reject) => {
     const labelPayload = {
-      test_label: true,
+      test_label: testLabel,
       label_format: 'pdf'
     }
 

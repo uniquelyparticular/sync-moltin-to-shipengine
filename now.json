@@ -3,6 +3,7 @@
   "alias": "particular-demo-sync-moltin-to-shipengine.now.sh",
   "env": {
     "NODE_ENV": "production",
+    "TESTING_MODE": "@demo-testing-mode",
     "MOLTIN_CLIENT_ID": "@demo-moltin-client-id",
     "MOLTIN_CLIENT_SECRET": "@demo-moltin-client-secret",
     "MOLTIN_WEBHOOK_SECRET": "@demo-moltin-webhook-secret",
