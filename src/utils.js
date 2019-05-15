@@ -26,6 +26,7 @@ const createShipment = (
     }
     console.log('createShipment, shipmentPayload', shipmentPayload)
 
+    // TODO!!!!!!!!!!!: not sure what to do if more than 1 shipping_address?
     return shipEngine
       .post('shipments', shipmentPayload)
       .then(data => {
