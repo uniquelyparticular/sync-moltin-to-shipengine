@@ -285,10 +285,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@moltin/request@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-1.6.2.tgz#080c5726d7c78b9cfdc5a36b420c96eaccdbb1db"
-  integrity sha512-BFX6SgBjH3WlM+zo8+RgDYbkxCl3uAjqSDFE3Xh0gRpJ0KZeuLN4mR319z3OCRh2k1L83NfHwwH9GLKM/3ruAg==
+"@moltin/request@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-2.0.0.tgz#aad605116145a6c2b02c8ba651ac72fac702aba7"
+  integrity sha512-uYu6vqY8WmxmuyMOQvF/AccZtnv0IZmhBCeTVhok0PTlIrckuUx2k6lYVjRZIujwZd9zXCvdDTvO1xgVD/TkgQ==
   dependencies:
     cross-fetch "3.0.3"
 
