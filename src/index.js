@@ -1,7 +1,7 @@
 const { json, send } = require('micro')
 const mailcomposer = require('nodemailer/lib/mail-composer')
 const AWS = require('aws-sdk')
-const { createClient: moltinClient } = require('@moltin/request')
+const { MoltinClient } = require('@moltin/request')
 const {
   createClient: shipEngineClient
 } = require('@particular./shipengine-request')
@@ -30,7 +30,7 @@ const SES = new AWS.SES({
   secretAccessKey: process.env.AMAZON_SECRET_ACCESS_KEY,
   region: process.env.AMAZON_REGION
 })
-const moltin = new moltinClient({
+const moltin = new MoltinClient({
   client_id: process.env.MOLTIN_CLIENT_ID,
   client_secret: process.env.MOLTIN_CLIENT_SECRET,
   application: 'demo-sync-moltin-to-shipengine'
