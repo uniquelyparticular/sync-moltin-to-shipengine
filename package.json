@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@moltin/request": "2.0.0",
-    "@particular./shipengine-request": "1.1.4",
+    "@particular./shipengine-request": "1.1.6",
     "aws-sdk": "2.437.0",
     "micro": "9.3.3",
     "micro-cors": "0.1.1",
