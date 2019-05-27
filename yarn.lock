@@ -355,10 +355,10 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
-"@particular./shipengine-request@1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@particular./shipengine-request/-/shipengine-request-1.1.6.tgz#d8efc86c37e902f4848f080beadf35444d4bb2ad"
-  integrity sha512-+a+MLYe/SXAf3UKMDl4PLT+lAq3eOQ/n91LLmLzsbKcsmnFY/5dvqigAVM0Ec78kpTmFf01D4ofeBXgKhWbDYQ==
+"@particular./shipengine-request@1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@particular./shipengine-request/-/shipengine-request-1.1.7.tgz#28aadc9f2bdf9c15d538f302d98ff6d312439d4a"
+  integrity sha512-lq5r7BDuHIXrcJj+DlV/HUT19he4yL92Du0kVWKEsu1gfOJbVUqK9zkpAteJu45cMhmLpt/2nO3R0a+AEcEbfA==
   dependencies:
     cross-fetch "3.0.3"
 
