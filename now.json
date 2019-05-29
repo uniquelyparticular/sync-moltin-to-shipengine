@@ -1,6 +1,7 @@
 {
+  "version": 2,
   "name": "demo-sync-moltin-to-shipengine",
-  "alias": "particular-demo-sync-moltin-to-shipengine.now.sh",
+  "alias": "particular-sync-moltin-to-shipengine.now.sh",
   "env": {
     "NODE_ENV": "production",
     "TESTING_MODE": "@demo-testing-mode",
