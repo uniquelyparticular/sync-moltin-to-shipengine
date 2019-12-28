@@ -73,7 +73,6 @@ process.on('unhandledRejection', (reason, p) => {
 })
 
 module.exports = cors(async (req, res) => {
-  console.log('hi')
   if (req.method === 'OPTIONS') {
     return send(res, 204)
   }
