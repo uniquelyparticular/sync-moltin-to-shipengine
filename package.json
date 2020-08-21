@@ -48,7 +48,7 @@
     "jest": "24.9.0",
     "micro-dev": "3.0.0",
     "prettier": "1.19.1",
-    "pretty-quick": "1.11.1",
+    "pretty-quick": "2.0.2",
     "semantic-release": "15.14.0",
     "ts-jest": "24.3.0"
   },
