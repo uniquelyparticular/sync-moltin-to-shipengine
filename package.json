@@ -44,7 +44,7 @@
     "nodemailer": "6.5.0"
   },
   "devDependencies": {
-    "husky": "2.7.0",
+    "husky": "5.2.0",
     "jest": "24.9.0",
     "micro-dev": "3.0.0",
     "prettier": "1.19.1",
