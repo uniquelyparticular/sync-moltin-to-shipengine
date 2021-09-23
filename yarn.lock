@@ -4789,10 +4789,10 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-nodemailer@6.6.4:
-  version "6.6.4"
-  resolved "https://registry.npmjs.org/nodemailer/-/nodemailer-6.6.4.tgz"
-  integrity sha512-7ZXmys0IIaX531apjP+m/w1YYX3LGToDeRGTrxaPPdWLPernM8ZM+2w6pYp1eNF6LJxbUbAN8KHmlGaFz/HqqQ==
+nodemailer@6.6.5:
+  version "6.6.5"
+  resolved "https://registry.npmjs.org/nodemailer/-/nodemailer-6.6.5.tgz"
+  integrity sha512-C/v856DBijUzHcHIgGpQoTrfsH3suKIRAGliIzCstatM2cAa+MYX3LuyCrABiO/cdJTxgBBHXxV1ztiqUwst5A==
 
 nopt@^4.0.1, nopt@~4.0.1:
   version "4.0.1"
