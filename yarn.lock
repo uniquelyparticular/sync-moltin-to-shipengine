@@ -877,10 +877,10 @@ atob@^2.1.1:
   resolved "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk@2.1129.0:
-  version "2.1129.0"
-  resolved "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.1129.0.tgz"
-  integrity sha512-gQZaByfW7zKCg1n/kA+xDdLhI/SauaokRTq+lztK1cCCdFkR5CShcKeK/qUgVxjy43mwB7CkeTh1WUr2NMb0jg==
+aws-sdk@2.1130.0:
+  version "2.1130.0"
+  resolved "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.1130.0.tgz"
+  integrity sha512-bkLXuOpHphKvaMAbbmqaHQtYsGICmoyEJdLlNOTCq7dH0uKxARcZEj01ebCifsJJ/fOrPt8EbNUHPu4/DOueDA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
