@@ -4613,10 +4613,10 @@ micro-dev@3.1.0:
     pretty-error "4.0.0"
     string-length "2.0.0"
 
-micro@9.4.0:
-  version "9.4.0"
-  resolved "https://registry.npmjs.org/micro/-/micro-9.4.0.tgz"
-  integrity sha512-F3uh5Ob+0896E1skflRvcY6Cpq6/sA0RB7exMl/IhQ2wbwL79aF+mDAyjDcKNhXKkJVEXhKZrPqOEFLXkJW9og==
+micro@9.4.1:
+  version "9.4.1"
+  resolved "https://registry.npmjs.org/micro/-/micro-9.4.1.tgz"
+  integrity sha512-Lpjcbp6Y9GJIfewxDfTmu9eW0rt0MGo+Gs1d3yJLFa7mhErtKkCngGhDbA/O1gqUjEwsHh+jWPg8BJ0Bx4AgFA==
   dependencies:
     arg "4.1.0"
     content-type "1.0.4"
